@@ -1,49 +1,45 @@
 import React from "react";
-import { FaShoppingCart, FaHeart, FaFacebookF, FaInstagramSquare, FaYoutube } from "react-icons/fa";
-import { TfiReload } from "react-icons/tfi";
+import { FaUser, FaShoppingCart, FaHeart, FaFacebookF, FaInstagramSquare } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
 import './Header.scss';
 
 function Header() {
     return (
         <header className='header'>
-            <div className="left-menu">
-                <nav className='social-icons'>
+            <div className="menu">
+                <div className="menu-section">
                     <ul>
-                        <li><FaFacebookF /></li>
-                        <li><FaInstagramSquare /></li>
-                        <li><FaYoutube /></li>
+                        <li>Tất cả</li>
+                        <li>Thương hiệu</li>
+                        <li>Nam</li>
+                        <li>Nữ</li>
+                        <li>Tin tức</li>
                     </ul>
-                </nav>
-                <nav className='nav-menu menu1'>
+                </div>
+                <div className="search">
+                    <input type="search" pattern="Tìm kiếm" placeholder="Tìm kiếm"/>
+                    <CiSearch />
+                </div>
+                <div className="menu-icons">
                     <ul>
-                        <li>Elements</li>
-                        <li>Our shop</li>
-                        <li>About us</li>
-                    </ul>
-                </nav>
-            </div>
+                        
+                        <li>
+                            <FaHeart/>
+                        </li>
+                        <li>
+                            <FaShoppingCart/>
+                        </li>
+                        <li>
+                            <FaUser/>
 
-            <div className="logo">
-                <div className="tile">Marseille</div>
-                <div className="name">XSTORE THEME</div>
-            </div>
+                        </li>
+                    </ul>
 
-            <div className="right-menu">
-                <nav className="nav-menu menu2">
-                    <ul>
-                        <li>Contacts</li>
-                        <li>Search</li>
-                        <li>Sign In</li>
-                    </ul>
-                </nav>
-                <nav className="social-icons2">
-                    <ul>
-                        <li><TfiReload /></li>
-                        <li><FaHeart /></li>
-                        <li><FaShoppingCart /></li>
-                    </ul>
-                </nav>
+                </div>
+
             </div>
+            
+            
         </header>
     );
 }

@@ -3,6 +3,8 @@ import './assets/styles/main.scss'
 import Header from './components/Header/Header';
 import Layout from './components/Layout/Layout';
 import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/Banner';
+import Bran from './components/bran/bran';
 
 
 
@@ -13,7 +15,9 @@ function App() {
         <>
         <Layout>
             <Header/>
-         
+            <Banner/>
+            <Bran/>
+            
         </Layout>
         </>
         

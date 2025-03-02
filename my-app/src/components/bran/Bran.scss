@@ -1,0 +1,16 @@
+@use '../../assets/styles/variable.scss' as var;
+
+.container-bran {
+
+    .wrapper-bran {
+
+        .menu-bran {
+            ul {
+                button {
+                    gap: 20px;
+                }
+            }
+
+        }
+    }
+}
