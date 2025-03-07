@@ -1,16 +1,157 @@
 @use '../../assets/styles/variable.scss' as var;
 
 .container-bran {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    margin-top: 50px;
+}
 
-    .wrapper-bran {
+.wrapper-bran {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .menu-bran {
-            ul {
-                button {
-                    gap: 20px;
-                }
-            }
+/* Menu thương hiệu  */
+.menu-bran {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
 
+    button {
+        background: var.$white_color;
+        border: 2px solid #ddd;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: var.$primary_color;
+            color: #fff;
         }
+
+        &.active {
+            background-color: var.$primary_color;
+            color: white;
+            border-color: var.$primary_color;
+        }
+    }
+}
+
+/* Giới thiệu thương hiệu*/
+.about-bran {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.tile-bran {
+    flex: 1;
+}
+
+.tile-about-us {
+    .name-bran {
+        font-size: 20px;
+        font-weight: bold;
+        color: var.$primary_color;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        color: var.$primary_color;
+        line-height: 1.6;
+    }
+}
+
+.show-more {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: var.$primary_color;
+    color: var.$white_color;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: var.$seconddary_color;
+    }
+}
+
+/* Ảnh thương hiệu */
+.img-bran {
+    flex: 1;
+    display: flex;
+
+
+    img {
+        justify-content: flex-end;
+
+        width: 400px;
+        height: 350px;
+        max-width: 800px;
+        border-radius: 12px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .about-bran {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .menu-bran {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu-bran button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/*  Hiệu ứng fade-in khi xuất hiện */
+@keyframes fadeInText {
+    from {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

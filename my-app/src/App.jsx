@@ -1,27 +1,21 @@
-import { useState } from 'react';
-import './assets/styles/main.scss'
-import Header from './components/Header/Header';
-import Layout from './components/Layout/Layout';
-import Footer from './components/Footer/Footer';
-import Banner from './components/Banner/Banner';
-import Bran from './components/bran/bran';
-
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './assets/styles/main.scss';
+import Home from './components/Home/home';
+import Showmore from './components/showmore/showmore'
+import ListProduct from './components/listProduct/listProduct';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <>
-        <Layout>
-            <Header/>
-            <Banner/>
-            <Bran/>
-            
-        </Layout>
-        </>
-        
-     
+        <Router>
+            <div className="main-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path = "/more" element = {<Showmore/>}/>
+                    <Route path = "/listproduct" element = {<ListProduct/>}/>
+                </Routes>
+            </div>
+        </Router>
     );
 }
 

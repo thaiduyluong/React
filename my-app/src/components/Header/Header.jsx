@@ -1,45 +1,50 @@
-import React from "react";
-import { FaUser, FaShoppingCart, FaHeart, FaFacebookF, FaInstagramSquare } from "react-icons/fa";
-import { CiSearch } from "react-icons/ci";
+import React from 'react';
+import {
+    FaUser,
+    FaShoppingCart,
+    FaHeart,
+    FaFacebookF,
+    FaInstagramSquare
+} from 'react-icons/fa';
+import { CiSearch } from 'react-icons/ci';
 import './Header.scss';
+import { Link } from 'react-router';
 
 function Header() {
     return (
         <header className='header'>
-            <div className="menu">
-                <div className="menu-section">
+            <div className='menu'>
+                <div className='menu-section'>
                     <ul>
-                        <li>Tất cả</li>
-                        <li>Thương hiệu</li>
-                        <li>Nam</li>
-                        <li>Nữ</li>
-                        <li>Tin tức</li>
+                        <Link to = "/listproduct" className='menu-link'><li>Product</li></Link>
+                        <li>Brand</li>
+                        <li>Collection</li>
+                        <li>Promotion</li>
+                        <li>Aboutus</li>
                     </ul>
                 </div>
-                <div className="search">
-                    <input type="search" pattern="Tìm kiếm" placeholder="Tìm kiếm"/>
+                <div className='search'>
+                    <input
+                        type='search'
+                        pattern='Tìm kiếm'
+                        placeholder='Tìm kiếm'
+                    />
                     <CiSearch />
                 </div>
-                <div className="menu-icons">
+                <div className='menu-icons'>
                     <ul>
-                        
                         <li>
-                            <FaHeart/>
+                            <FaHeart />
                         </li>
                         <li>
-                            <FaShoppingCart/>
+                            <FaShoppingCart />
                         </li>
                         <li>
-                            <FaUser/>
-
+                            <FaUser />
                         </li>
                     </ul>
-
                 </div>
-
             </div>
-            
-            
         </header>
     );
 }
