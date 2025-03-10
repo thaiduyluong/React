@@ -5,6 +5,7 @@ import Banner from "../Banner/Banner";
 import Bran from "../bran/Bran";
 import Product from "../product/product"
 import SofaProduct from "../sofa/SofaProduct";
+import Bed from "../bed/bed";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <Bran/>
             <Product/>
             <SofaProduct/>
+            <Bed/>
         </Layout>
     );
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

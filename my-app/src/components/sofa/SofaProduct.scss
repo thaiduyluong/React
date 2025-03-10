@@ -66,18 +66,19 @@
 
         .more-sofa {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 70px;
 
             button {
                 color: #fff;
                 padding: 8px;
                 background-color: var.$primary_color;
                 border: none;
-                transition: transform 0.3s ease-in-out;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
             }
 
             &:hover {
-                transform: scale(1.02)
+                transform: scale(1.05)
             }
 
 

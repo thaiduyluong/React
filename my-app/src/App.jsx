@@ -4,6 +4,7 @@ import './assets/styles/main.scss';
 import Home from './components/Home/home';
 import Showmore from './components/showmore/showmore'
 import ListProduct from './components/listProduct/listProduct';
+import CategoryProduct from './components/categoryProduct/categoryProduct';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path = "/more" element = {<Showmore/>}/>
                     <Route path = "/listproduct" element = {<ListProduct/>}/>
+                    <Route path = "/categoryProduct" element = {<CategoryProduct/>}/>
                 </Routes>
             </div>
         </Router>

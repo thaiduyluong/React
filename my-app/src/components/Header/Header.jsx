@@ -16,7 +16,7 @@ function Header() {
             <div className='menu'>
                 <div className='menu-section'>
                     <ul>
-                        <Link to = "/listproduct" className='menu-link'><li>Product</li></Link>
+                        <Link to = "/categoryProduct" className='menu-link'><li>Product</li></Link>
                         <li>Brand</li>
                         <li>Collection</li>
                         <li>Promotion</li>

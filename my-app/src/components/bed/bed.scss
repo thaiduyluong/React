@@ -1,0 +1,58 @@
+.container-bed {
+    .wrapper-bed {
+        p {
+            font-size: 30px;
+            margin-bottom: -2px;
+        }
+
+        .dash-bed {
+            background-color: black;
+            width: 100%;
+            height: 1px;
+            margin-bottom: 20px;
+        }
+
+        .banner-bed {
+            img {
+                width: 100%;
+            }
+        }
+
+        .list-product-bed {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 100px;
+
+            .bed-item {
+                background-color: #fff;
+                transition: transform .3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                img {
+                    width: 100%;
+
+
+                }
+
+                p {
+                    font-size: 10px;
+                    text-align: center;
+                }
+
+                .price-bed {
+                    font-size: 10px;
+                    color: red;
+                    justify-content: center;
+                }
+            }
+
+
+        }
+
+    }
+}
